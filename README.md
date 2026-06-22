@@ -1,4 +1,4 @@
-# Sistem Deteksi dan Penghitung Pengunjung Perpustakaan Real-Time Menggunakan YOLOv8 dan Python
+# Sistem Deteksi dan Penghitung Pengunjung Perpustakaan Menggunakan YOLOv8 dan Python
 
 Proyek ini merupakan sistem deteksi dan penghitung jumlah pengunjung perpustakaan menggunakan **YOLOv8**, **OpenCV**, dan **Python**. Sistem dapat memproses input berupa gambar, folder berisi banyak gambar, maupun video. Objek yang dideteksi hanya manusia, yaitu class `person` pada dataset COCO.
 
