@@ -1,4 +1,4 @@
-# Sistem Deteksi dan Penghitung Pengunjung Perpustakaan Real-Time Menggunakan YOLOv8 dan Python
+# Sistem Deteksi dan Penghitung Pengunjung Perpustakaan Menggunakan YOLOv8 dan Python
 
 Proyek ini merupakan sistem deteksi dan penghitung jumlah pengunjung perpustakaan menggunakan **YOLOv8**, **OpenCV**, dan **Python**. Sistem dapat memproses input berupa gambar, folder berisi banyak gambar, maupun video. Objek yang dideteksi hanya manusia, yaitu class `person` pada dataset COCO.
 
@@ -24,28 +24,25 @@ Pada input video, sistem akan membaca video frame demi frame, menjalankan deteks
 Jumlah Pengunjung Saat Ini: [angka]
 ```
 
-## Struktur Folder
+## 📂 Struktur Folder
 
+```text
 project/
-│
 ├── deteksi_pengunjung.py
 ├── README.md
-│
 ├── dataset_gambar/
-│ ├── perpus1.jpg
-│ ├── perpus2.jpg
-│ └── perpus3.png
-│
+│   ├── perpus1.jpg
+│   ├── perpus2.jpg
+│   └── perpus3.png
 ├── video/
-│ └── perpustakaan.mp4
-│
-├── hasil_gambar/
-│ ├── hasil_perpus1.jpg
-│ ├── hasil_perpus2.jpg
-│ └── hasil_perpus3.png
-│
-└── hasil_video/
-└── hasil_pengunjung.mp4
+│   └── perpustakaan.mp4
+└── hasil_gambar/
+    ├── hasil_perpus1.jpg
+    ├── hasil_perpus2.jpg
+    ├── hasil_perpus3.png
+    └── hasil_video/
+        └── hasil_pengunjung.mp4
+```
 
 ## Instalasi
 
@@ -75,22 +72,32 @@ python deteksi_pengunjung.py --input dataset_video\nama_video.mp4 --output hasil
 
 ## Alur Program
 
-Input gambar/video
-|
-v
-Load model YOLOv8
-|
-v
-Deteksi objek person
-|
-v
-Filter class person
-|
-v
-Hitung jumlah bounding box
-|
-v
-Tampilkan bounding box dan jumlah pengunjung
-|
-v
-Simpan hasil output
+```markdown
+## 🔄 Alur Program
+
+> 📥 **Input** gambar/video
+> 
+> 🔽
+> 
+> 🧠 **Load model** YOLOv8
+> 
+> 🔽
+> 
+> 🔍 **Deteksi objek** person
+> 
+> 🔽
+> 
+> 🎯 **Filter class** person
+> 
+> 🔽
+> 
+> 🔢 **Hitung jumlah** bounding box
+> 
+> 🔽
+> 
+> 📺 **Tampilkan** bounding box & jumlah pengunjung
+> 
+> 🔽
+> 
+> 💾 **Simpan** hasil output
+```
